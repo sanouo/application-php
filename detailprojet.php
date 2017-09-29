@@ -21,12 +21,44 @@
 
         <!-- Add your site or application content here -->
 
+        <!-- Call of the database -->
+        <?php
+                try
+                {
+                $bdd = new PDO('mysql:host=localhost;dbname=application;charset=utf8', 'phpmyadmin', 'sana15');
+                }
+                catch (Exception $e)
+                {
+                    die('Erreur : ' . $e->getMessage());
+                }
 
-        <form action="connexion_post.php" method="post">
-    <input type="text" name="user" placeholder="user"><br>
-    <input type="password" name="pass" placeholder="password"><br>
-    <input type="submit" name="connexion" value="connexion">
-  </form>
+        ?>
+
+        <?php
+            $reponse = $bdd->prepare('SELECT * FROM project WHERE id = ?');
+            $reponse->execute(array($_GET['detail']));
+            $donnees = $reponse->fetch();
+        ?>
+
+
+        <div class="container">
+          <div class="row">
+
+
+            <div class="card carte col-12 col-md-6 col-lg-5">
+              <div class="card-block">
+              <h3 class="card-title"><?php echo $donnees['project']; ?></h3>
+              <p class="card-title"><?php echo $donnees['description']; ?></p>
+              <!-- <p class="card-text"><?php echo $donneees['date']; ?></p> -->
+              </div>
+            </div>
+          </div>
+          </div>
+
+
+          <?php
+       $reponse->closeCursor();
+       ?>
 
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>

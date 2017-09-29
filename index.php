@@ -77,7 +77,7 @@
               <h3 class="card-title"><?php echo $donnees['project']; ?></h3>
               <p class="card-title"><?php echo $donnees['description']; ?></p>
               <!-- <p class="card-text"><?php echo $donneees['date']; ?></p> -->
-              <!-- <a href="detail.php?article=<?php echo $key?>" class="btn btn-primary tonbou">Detail</a> -->
+              <a href="detailprojet.php?detail=<?php echo $donnees['id']; ?>" class="btn btn-primary tonbou">Detail</a>
               </div>
             </div>
 
