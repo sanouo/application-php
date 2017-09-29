@@ -53,10 +53,10 @@
             <input type="text" class="form-control" id="formGroupExampleInput2" name="task" placeholder="task">
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" id="formGroupExampleInput2" name="stage" placeholder="stage">
+            <input type="text" class="form-control" id="formGroupExampleInput3" name="stage" placeholder="stage">
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" id="formGroupExampleInput2" name="date" placeholder="date">
+            <input type="text" class="form-control" id="formGroupExampleInput4" name="datelimit" placeholder="dateLimit : 2017/09/29">
           </div>
           <button type="submit" value="Submit" class="btn btn-primary">Submit</button>
         </form>
@@ -76,7 +76,7 @@
               <div class="card-block">
               <h3 class="card-title"><?php echo $donnees['project']; ?></h3>
               <p class="card-title"><?php echo $donnees['description']; ?></p>
-              <!-- <p class="card-text"><?php echo $donneees['date']; ?></p> -->
+              <p class="card-text"><?php echo $donnees['datelimit']; ?></p>
               <a href="detailprojet.php?detail=<?php echo $donnees['id']; ?>" class="btn btn-primary tonbou">Detail</a>
               </div>
             </div>

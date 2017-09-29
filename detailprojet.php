@@ -49,7 +49,6 @@
               <div class="card-block">
               <h3 class="card-title"><?php echo $donnees['project']; ?></h3>
               <p class="card-title"><?php echo $donnees['description']; ?></p>
-              <!-- <p class="card-text"><?php echo $donneees['date']; ?></p> -->
               </div>
             </div>
           </div>

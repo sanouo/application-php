@@ -10,10 +10,12 @@
         }
 
 // insert in the database
-$req = $bdd->prepare('INSERT INTO project(project, description) VALUES(:project, :description)');
+$req = $bdd->prepare('INSERT INTO project(project, description, datelimit) VALUES(:project, :description , :datelimit)');
 $req->execute(array(
     'project' => $_POST['project'],
-    'description' => $_POST['description']
-    ));
+    'description' => $_POST['description'],
+    'datelimit' => $_POST['datelimit']
+
+  ));
 header('Location: index.php');
 ?>
