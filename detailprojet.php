@@ -48,7 +48,8 @@
             <div class="card carte col-12 col-md-6 col-lg-5">
               <div class="card-block">
               <h3 class="card-title"><?php echo $donnees['project']; ?></h3>
-              <p class="card-title"><?php echo $donnees['description']; ?></p>
+              <p class="card-text"><?php echo $donnees['description']; ?></p>
+              <p class="card-text"><?php echo $donnees['datelimit']; ?></p>
               </div>
             </div>
           </div>
