@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="fr">
+<html class="no-js" lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -21,6 +21,85 @@
 
         <!-- Add your site or application content here -->
 
+<!-- Call of the database -->
+<?php
+        try
+        {
+        $bdd = new PDO('mysql:host=localhost;dbname=application;charset=utf8', 'phpmyadmin', 'sana15');
+        }
+        catch (Exception $e)
+        {
+            die('Erreur : ' . $e->getMessage());
+        }
+?>
+
+
+<!-- start of the header -->
+        <header>
+          <h1>Application/Project</h1>
+        </header>
+<!-- end of the headear -->
+
+
+<!-- start of the form -->
+        <form action="index_post.php" method="post">
+          <div class="form-group">
+            <input type="text" class="form-control" id="formGroupExampleInput" name="project"  placeholder="project">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="formGroupExampleInput2" name="description" placeholder="description">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="formGroupExampleInput2" name="task" placeholder="task">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="formGroupExampleInput2" name="stage" placeholder="stage">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="formGroupExampleInput2" name="date" placeholder="date">
+          </div>
+          <button type="submit" value="Submit" class="btn btn-primary">Submit</button>
+        </form>
+<!-- end of the form -->
+
+
+<!-- start of the div class container -->
+        <div class="container">
+          <div class="row">
+
+
+          <?php  $reponse = $bdd->query('SELECT * FROM project');
+                while ($donnees = $reponse->fetch())
+                {
+                ?>
+            <div class="card carte col-12 col-md-6 col-lg-5">
+              <div class="card-block">
+              <h3 class="card-title"><?php echo $donnees['project']; ?></h3>
+              <p class="card-title"><?php echo $donnees['description']; ?></p>
+              <!-- <p class="card-text"><?php echo $donneees['date']; ?></p> -->
+              <!-- <a href="detail.php?article=<?php echo $key?>" class="btn btn-primary tonbou">Detail</a> -->
+              </div>
+            </div>
+
+            <?php
+              }
+              $reponse->closeCursor();
+              ?>
+          </div>
+        </div>
+<!-- end of the div class container -->
+
+<a href="connexion.php">connection</a>
+<a href="inscription.php">registration</a>
+<!-- start of the footer -->
+        <footer>
+          <ul>
+            <li>Mentions legales</li>
+            <li>Chartes de confidentialite</li>
+            <li>Copyright © 2059 Application/Project</li>
+          </ul>
+        </footer>
+<!-- end of the footer -->
 
 
 
