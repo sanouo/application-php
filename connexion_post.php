@@ -24,9 +24,7 @@ if ($_POST['user'] != $resultat['user'] or $pass_hache != $resultat['pass'] )
 else
 {
     session_start();
-    // $_SESSION['id'] = $resultat['id'];
-    // $_SESSION['pseudo'] = $pseudo;
     echo 'You are connected';
-    header('Location: index.php');
+    header('Location: accueil.php');
 }
 ?>

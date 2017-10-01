@@ -17,5 +17,5 @@ $req->execute(array(
     'datelimit' => $_POST['datelimit']
 
   ));
-header('Location: index.php');
+header('Location: accueil.php');
 ?>

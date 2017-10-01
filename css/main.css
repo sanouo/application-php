@@ -87,14 +87,95 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*rules fot the page index*/
+.connect
+{
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
 
+.connect input
+{
+  width: 60%;
+  display: flex;
+  margin-top: 1em;
+  margin-left: 18%;
+  border: none;
+  font-size: 20px;
+  border-bottom : 2px solid #F56900;
+}
 
+.connect input:hover
+  {
+  font-size: 15px;
+  color: #B2D3D9;
+  width: 30%;
+  }
 
+.tonbou
+{
+  background-color: #F56900;
+}
 
+.account
+{
+  margin-left: 33%;
+  width: 25%;
 
+}
 
+.registre
+{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5%;
+}
 
+.registre a
+{
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 7px;
+  margin-top: 1em;
+}
 
+.registre a:hover
+{
+  background-color: darkblue;
+  color: white;
+  text-decoration: none;
+}
+
+footer
+{
+  background-color: #373737;
+  color: white;
+  padding: 12px;
+  margin-top: 1em;
+}
+
+footer ul
+{
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+  list-style-type: none;
+}
+
+header
+{
+  background-color: #373737;
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  padding-left: 5%;
+  width: 100%;
+}
+
+/*end rules fot the page index*/
 
 
 

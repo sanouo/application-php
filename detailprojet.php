@@ -31,7 +31,6 @@
                 {
                     die('Erreur : ' . $e->getMessage());
                 }
-
         ?>
 
         <?php
@@ -59,6 +58,10 @@
           <?php
        $reponse->closeCursor();
        ?>
+
+
+
+
 
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
