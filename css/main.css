@@ -87,7 +87,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/*rules fot the page index*/
+/*rules for the page index*/
 .connect
 {
   margin-left: 20%;
@@ -135,19 +135,9 @@ textarea {
 
 .registre a
 {
-  background-color: blue;
-  color: white;
-  padding: 10px;
-  border-radius: 7px;
   margin-top: 1em;
 }
 
-.registre a:hover
-{
-  background-color: darkblue;
-  color: white;
-  text-decoration: none;
-}
 
 footer
 {
@@ -175,9 +165,46 @@ header
   width: 100%;
 }
 
-/*end rules fot the page index*/
+/*end rules for the page index*/
 
 
+
+/*rules for the page accueil*/
+.insertion
+{
+  width: 60%;
+  margin-top: 2em;
+  margin-left: 5%;
+}
+
+.description
+{
+  height: 100px;
+}
+
+.container
+{
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.submi
+{
+  background-color: #F56900;
+}
+
+.detail , .submi
+{
+  border: 1px solid #F56900;
+}
+
+.material-icons
+{
+  color: #F56900;
+  float: right;
+}
+
+/*end rules for the page accueil*/
 
 
 

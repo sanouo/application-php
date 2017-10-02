@@ -1,14 +1,8 @@
+<!-- insertion call database -->
+<?php include('calldatabase.php'); ?>
+
+
 <?php
-try
-{
-$bdd = new PDO('mysql:host=localhost;dbname=application;charset=utf8', 'phpmyadmin', 'sana15');
-}
-catch (Exception $e)
-{
-    die('Erreur : ' . $e->getMessage());
-}
-
-
 $pass_hache = sha1($_POST['pass']);
 $req = $bdd->prepare('SELECT user FROM registration WHERE user = :user');
 $req->execute(array(
