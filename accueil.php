@@ -2,7 +2,9 @@
 <?php include('calldatabase.php'); ?>
 
 <div class="registre">
-<a href="#" class="btn btn-primary">deconnection</a>
+  <form class="logout" action="deconnexion_post.php" method="post">
+    <button type="submit" value="Submit" class="btn btn-primary">Log out</button>
+  </form>
 </div>
 
 <!-- start of the form -->

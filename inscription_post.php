@@ -20,7 +20,7 @@ if (isset($_POST['user']) && isset($_POST['pass']) && isset($_POST['confirmpass'
             'user' => $_POST['user'],
             'pass' => $pass_hache,
             ));
-        header('Location: index.php');
+        header('Location: accueil.php');
     }
   }
     else

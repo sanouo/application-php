@@ -203,8 +203,34 @@ header
   color: #F56900;
   float: right;
 }
-
 /*end rules for the page accueil*/
+
+
+/*rules af of the page detailprojet*/
+
+.logout
+{
+  margin-top: 2em;
+}
+
+.registre .back
+{
+  background-color: #0275D8;
+  color: white;
+  padding: 7px;
+  border-radius: 7px;
+  width: 7%;
+  text-align: center;
+  margin-right: 5%;
+}
+
+.registre .back:hover
+{
+  text-decoration: none;
+  background-color: darkblue;
+}
+/*end rules af of the page detailprojet*/
+
 
 
 
