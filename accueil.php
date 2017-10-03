@@ -17,8 +17,9 @@
           </div>
           <!-- <div class="form-group">
             <input type="text" class="form-control" id="formGroupExampleInput5" name="task" placeholder="task">
-          </div>
-          <div class="form-group">
+          </div> -->
+
+          <!-- <div class="form-group">
             <input type="text" class="form-control" id="formGroupExampleInput3" name="stage" placeholder="stage">
           </div> -->
           <div class="form-group">
